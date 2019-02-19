@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class AddUser extends Component {
 
@@ -88,6 +89,11 @@ class AddUser extends Component {
       </div>
     )
   }
+}
+
+AddUser.propTypes = {
+  users: PropTypes.array.isRequired,
+  onAddUser: PropTypes.func.isRequired
 }
 
 export default AddUser
