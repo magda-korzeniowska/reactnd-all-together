@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AddUser from './AddUser.js'
+import AddUser from './AddUser.js';
+import UserList from './UserList.js';
+
 
 /*
 This exercise will help you put together and practice all of the concepts you've
@@ -34,6 +36,7 @@ class App extends Component {
           users={this.state.users}
           onAddUser={this.addNewUser}
         />
+        <UserList users={this.state.users} />
       </div>
     );
   }
