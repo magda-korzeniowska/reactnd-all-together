@@ -1,4 +1,5 @@
 import React,  { Component } from 'react';
+import User from './User.js';
 
 class UserList extends Component {
 
@@ -9,10 +10,10 @@ class UserList extends Component {
   render() {
     return (
       <div>
-        <h1>Users</h1>
+        <h1>Users:</h1>
         <ol>
           {this.props.users.map((user) => (
-            <User />
+            <User key={user.username} user={user}/>
           ))}
         </ol>
       </div>
