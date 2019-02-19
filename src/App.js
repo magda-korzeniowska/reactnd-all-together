@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   addNewUser = (user) => {
+    user.numGames = 0;
     this.setState(prevState => ({
       users: [...prevState.users, user]
     }))
